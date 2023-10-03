@@ -68,6 +68,18 @@
             }));
         }
     }), 0);
+    const script_button = document.querySelector(".footer__scroll-up");
+    function scrollUp() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    function addActiveClass() {
+        if (window.scrollY >= 200) script_button.classList.add("active"); else script_button.classList.remove("active");
+    }
+    window.addEventListener("scroll", addActiveClass);
+    script_button.addEventListener("click", scrollUp);
     window["FLS"] = true;
     isWebp();
     menuInit();
