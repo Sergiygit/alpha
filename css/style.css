@@ -230,6 +230,14 @@ h6 {
   text-align: center;
 }
 
+.footer__content {
+  background: #E8F8FA;
+  border-radius: 20px;
+  padding: 30px 10px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 .footer__phone {
   font-weight: 700;
   -webkit-transition: all 0.3s ease 0s;
@@ -637,6 +645,10 @@ h6 {
           align-items: center;
 }
 
+.review__bottom-text {
+  font-weight: 600;
+}
+
 .review__socials-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1030,7 +1042,7 @@ h6 {
   }
 
   .review__bottom-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .review__socials-link img {
@@ -2725,15 +2737,15 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6477272727rem  +  1.1363636364vw , 1.5rem )) {
     .review__bottom-text {
-      font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem );
+      font-size: clamp( 0.875rem , 0.6477272727rem  +  1.1363636364vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6477272727rem  +  1.1363636364vw , 1.5rem )) {
     .review__bottom-text {
-      font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 55);
+      font-size: calc(0.875rem + 0.625 * (100vw - 20rem) / 55);
     }
 }
 
